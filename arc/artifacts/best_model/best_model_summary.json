@@ -1,0 +1,132 @@
+{
+  "source_run": "D:\\project\\深度学习与空间智能\\arc\\artifacts\\output_search\\search_5\\run_05",
+  "selection_rule": "Best validation-accuracy checkpoint under the final 40-epoch setting.",
+  "dataset_root": "D:\\project\\深度学习与空间智能\\EuroSAT_RGB",
+  "training": {
+    "epochs": 40,
+    "batch_size": 128,
+    "learning_rate": 0.05,
+    "lr_decay": 0.95,
+    "weight_decay": 0.0002,
+    "seed": 47
+  },
+  "model": {
+    "input_dim": 12288,
+    "hidden_dim": 256,
+    "num_classes": 10,
+    "activation": "tanh",
+    "seed": 47
+  },
+  "results": {
+    "best_epoch": 38,
+    "best_val_accuracy": 0.5812345679012346,
+    "test_accuracy": 0.585925925925926,
+    "test_loss": 1.212877409428726,
+    "misclassified_total": 1677,
+    "sampled_misclassified": 100
+  },
+  "class_accuracy": [
+    {
+      "class_name": "AnnualCrop",
+      "correct": 210,
+      "total": 450,
+      "accuracy": 0.4666666666666667
+    },
+    {
+      "class_name": "Forest",
+      "correct": 385,
+      "total": 450,
+      "accuracy": 0.8555555555555555
+    },
+    {
+      "class_name": "HerbaceousVegetation",
+      "correct": 187,
+      "total": 450,
+      "accuracy": 0.41555555555555557
+    },
+    {
+      "class_name": "Highway",
+      "correct": 50,
+      "total": 375,
+      "accuracy": 0.13333333333333333
+    },
+    {
+      "class_name": "Industrial",
+      "correct": 287,
+      "total": 375,
+      "accuracy": 0.7653333333333333
+    },
+    {
+      "class_name": "Pasture",
+      "correct": 196,
+      "total": 300,
+      "accuracy": 0.6533333333333333
+    },
+    {
+      "class_name": "PermanentCrop",
+      "correct": 190,
+      "total": 375,
+      "accuracy": 0.5066666666666667
+    },
+    {
+      "class_name": "Residential",
+      "correct": 344,
+      "total": 450,
+      "accuracy": 0.7644444444444445
+    },
+    {
+      "class_name": "River",
+      "correct": 222,
+      "total": 375,
+      "accuracy": 0.592
+    },
+    {
+      "class_name": "SeaLake",
+      "correct": 302,
+      "total": 450,
+      "accuracy": 0.6711111111111111
+    }
+  ],
+  "top_confusions": [
+    {
+      "true_label": "HerbaceousVegetation",
+      "predicted_label": "Residential",
+      "count": 107
+    },
+    {
+      "true_label": "AnnualCrop",
+      "predicted_label": "PermanentCrop",
+      "count": 87
+    },
+    {
+      "true_label": "HerbaceousVegetation",
+      "predicted_label": "PermanentCrop",
+      "count": 87
+    },
+    {
+      "true_label": "Highway",
+      "predicted_label": "River",
+      "count": 83
+    },
+    {
+      "true_label": "SeaLake",
+      "predicted_label": "Forest",
+      "count": 71
+    },
+    {
+      "true_label": "PermanentCrop",
+      "predicted_label": "HerbaceousVegetation",
+      "count": 67
+    },
+    {
+      "true_label": "Highway",
+      "predicted_label": "Residential",
+      "count": 66
+    },
+    {
+      "true_label": "Industrial",
+      "predicted_label": "Residential",
+      "count": 65
+    }
+  ]
+}

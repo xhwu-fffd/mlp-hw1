@@ -1,0 +1,8 @@
+{
+  "model": "gpt-5.4",
+  "api_key": "YOUR_API_KEY_HERE",
+  "base_url": "https://api.example.com/v1",
+  "temperature": 0.0,
+  "seed": 42,
+  "max_tokens": 30000
+}
